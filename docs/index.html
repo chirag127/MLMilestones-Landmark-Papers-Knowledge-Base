@@ -1,0 +1,140 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="A curated collection of landmark papers in machine learning that shaped the field. Explore foundational research and breakthroughs in AI." />
+  <title>Learning Papers – Landmark Papers in Machine Learning</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles for Glassmorphism -->
+  <style>
+    body {
+      @apply bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white;
+      font-family: 'Inter', sans-serif;
+    }
+    .glass {
+      @apply bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-xl;
+    }
+    .card {
+      @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-all duration-300;
+    }
+    .btn {
+      @apply px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-500 rounded-lg text-white font-medium shadow-lg hover:from-purple-700 hover:to-blue-600 transition-all;
+    }
+    .text-gradient {
+      @apply bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="py-6 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <div class="w-3 h-3 bg-purple-500 rounded-full"></div>
+        <span class="text-xl font-bold text-gradient">LearningPapers</span>
+      </div>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#" class="text-white hover:text-purple-300 transition">Home</a>
+        <a href="about.html" class="text-white hover:text-purple-300 transition">About</a>
+        <a href="contact.html" class="text-white hover:text-purple-300 transition">Contact</a>
+      </nav>
+      <button class="md:hidden text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex-1 px-6 md:px-12 py-16">
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6">
+        <span class="text-gradient">Landmark Papers</span> <br />in Machine Learning
+      </h1>
+      <p class="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed">
+        A curated collection of groundbreaking research that shaped modern artificial intelligence. 
+        Explore the papers that introduced transformative techniques and fueled the evolution of ML.
+      </p>
+      <a href="#papers" class="btn inline-block">Explore Papers</a>
+    </div>
+  </section>
+
+  <!-- Papers Showcase -->
+  <section id="papers" class="px-6 md:px-12 py-16">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center text-gradient">Foundational Breakthroughs</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Paper 1 -->
+        <div class="card">
+          <h3 class="text-xl font-semibold text-white mb-3">Attention Is All You Need (2017)</h3>
+          <p class="text-gray-300 mb-4">
+            Vaswani et al. introduced the Transformer architecture, revolutionizing sequence modeling and enabling large language models.
+          </p>
+          <a href="https://arxiv.org/abs/1706.03762" target="_blank" class="text-purple-300 hover:underline text-sm">Read Paper →</a>
+        </div>
+
+        <!-- Paper 2 -->
+        <div class="card">
+          <h3 class="text-xl font-semibold text-white mb-3">Deep Residual Learning for Image Recognition (2015)</h3>
+          <p class="text-gray-300 mb-4">
+            He et al. proposed deep residual networks (ResNets), enabling training of extremely deep neural networks.
+          </p>
+          <a href="https://arxiv.org/abs/1512.03385" target="_blank" class="text-purple-300 hover:underline text-sm">Read Paper →</a>
+        </div>
+
+        <!-- Paper 3 -->
+        <div class="card">
+          <h3 class="text-xl font-semibold text-white mb-3">Generative Adversarial Networks (2014)</h3>
+          <p class="text-gray-300 mb-4">
+            Ian Goodfellow introduced GANs, a powerful framework for generative modeling using adversarial training.
+          </p>
+          <a href="https://arxiv.org/abs/1406.2661" target="_blank" class="text-purple-300 hover:underline text-sm">Read Paper →</a>
+        </div>
+
+        <!-- Paper 4 -->
+        <div class="card">
+          <h3 class="text-xl font-semibold text-white mb-3">BERT: Pre-training of Deep Bidirectional Transformers (2018)</h3>
+          <p class="text-gray-300 mb-4">
+            Devlin et al. presented BERT, a method for pre-training language representations that significantly improved NLP tasks.
+          </p>
+          <a href="https://arxiv.org/abs/1810.04805" target="_blank" class="text-purple-300 hover:underline text-sm">Read Paper →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="px-6 md:px-12 py-16">
+    <div class="max-w-4xl mx-auto text-center glass p-10">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gradient">Help Improve This Collection</h2>
+      <p class="text-gray-300 mb-6">
+        This list is a living document. If you know of a paper that should be included or have suggestions for improvements, 
+        please contribute via GitHub.
+      </p>
+      <a href="https://github.com/chirag127/learning-papers" target="_blank" class="btn">Contribute on GitHub</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="px-6 md:px-12 py-8 text-center text-gray-400 text-sm">
+    <p>Copyright (c) 2026 Chirag Singhal | Designed by Chirag Singhal</p>
+    <div class="flex justify-center space-x-6 mt-4">
+      <a href="https://github.com/chirag127" target="_blank" class="hover:text-white transition">GitHub</a>
+      <a href="https://linkedin.com/in/chirag-singhal1" target="_blank" class="hover:text-white transition">LinkedIn</a>
+      <a href="mailto:chiragsinghal127@gmail.com" class="hover:text-white transition">Email</a>
+      <a href="https://buymeacoffee.com/WhyIsWhen" target="_blank" class="hover:text-white transition">Buy Me a Coffee</a>
+    </div>
+  </footer>
+
+</body>
+</html>
+```

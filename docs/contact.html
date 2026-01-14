@@ -1,0 +1,106 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Learning Papers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .glass {
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 16px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    }
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white min-h-screen">
+
+  <!-- Header -->
+  <header class="py-6 px-6 flex justify-between items-center">
+    <div class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+      Learning Papers
+    </div>
+    <nav class="hidden md:flex space-x-8">
+      <a href="index.html" class="text-gray-300 hover:text-white transition">Home</a>
+      <a href="about.html" class="text-gray-300 hover:text-white transition">About</a>
+      <a href="contact.html" class="text-purple-300 font-medium">Contact</a>
+    </nav>
+    <button class="md:hidden text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-6 py-16 flex flex-col items-center max-w-4xl">
+    <div class="glass-panel p-8 md:p-12 w-full mb-10 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
+        Get in Touch
+      </h1>
+      <p class="text-gray-300 text-lg mb-8 max-w-2xl">
+        Have suggestions, feedback, or want to contribute? I'd love to hear from you! Whether it's a paper recommendation, a correction, or just a friendly hello.
+      </p>
+
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <div class="flex items-center space-x-4 bg-black bg-opacity-20 px-5 py-3 rounded-lg w-full md:w-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <a href="mailto:chiragsinghal127@gmail.com" class="text-gray-200 hover:text-purple-200 transition">
+            chiragsinghal127@gmail.com
+          </a>
+        </div>
+        <a href="https://github.com/chirag127" target="_blank" class="flex items-center space-x-3 bg-black bg-opacity-20 px-5 py-3 rounded-lg hover:bg-opacity-30 transition w-full md:w-auto justify-center">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="h-6 w-6" />
+          <span class="text-gray-200">GitHub @chirag127</span>
+        </a>
+      </div>
+
+      <div class="mt-12 space-y-6">
+        <h2 class="text-2xl font-semibold text-purple-200">Connect with Me</h2>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://linkedin.com/in/chirag-singhal1" target="_blank" class="flex items-center space-x-3 bg-gradient-to-r from-blue-600 to-blue-700 px-5 py-3 rounded-lg hover:from-blue-500 hover:to-blue-600 transition text-white font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://buymeacoffee.com/WhyIsWhen" target="_blank" class="flex items-center space-x-3 bg-gradient-to-r from-amber-500 to-amber-600 px-5 py-3 rounded-lg hover:from-amber-400 hover:to-amber-500 transition text-white font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.75 3.998c-2.42 0-4.5 1.75-5.75 3.25-1.25-1.5-3.33-3.25-5.75-3.25-3.5 0-5.75 2.75-5.75 6 0 4.5 3.5 6.25 8 10.5 1 .88 2.5 2.25 3.5 2.25 1.67 0 2.5-.75 3.75-.75 1.25 0 2.25.75 3.75.75 1 0 2.5-1.37 3.5-2.25 4.5-4.25 8-6 8-10.5 0-3.25-2.25-6-5.75-6-2.42 0-4.5 1.75-5.75 3.25-1.25-1.5-3.33-3.25-5.75-3.25z"/>
+            </svg>
+            <span>Buy Me a Coffee</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tip -->
+    <div class="glass p-6 rounded-xl w-full max-w-2xl text-center text-gray-300 text-sm">
+      <p>💡 Tip: Open a <a href="https://github.com/chirag127/learning-papers/issues" target="_blank" class="text-purple-300 hover:underline">GitHub Issue</a> or submit a <strong>Pull Request</strong> to suggest a paper or improve content!</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-400 text-sm mt-12 border-t border-gray-800">
+    Copyright (c) 2026 Chirag Singhal | Designed by Chirag Singhal
+  </footer>
+
+</body>
+</html>
+```
